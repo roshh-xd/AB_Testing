@@ -16,6 +16,13 @@ public class AppsFlyerTest : MonoBehaviour
     public void LogEvent()
     {
         Debug.Log("Start");
-        AppsFlyer.sendEvent("Test", new Dictionary<string, string>() { { "A/b Testing", "Successful" } });
+        AppsFlyer.sendEvent("Test", GetParamsDict());
+    }
+
+    public Dictionary<string,string> GetParamsDict()
+    {
+        var dict = new Dictionary<string, string>();
+        dict.Add("A/b Testing", "Successful");
+        return dict;
     }
 }
