@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AppsFlyerSDK;
+using UnityEngine.UI;
+
 public class AppsFlyerTest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    [SerializeField] Button testButton;
 
-    }
-
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-   
+        testButton.onClick.AddListener(LogEvent);
     }
 
     public void LogEvent()
