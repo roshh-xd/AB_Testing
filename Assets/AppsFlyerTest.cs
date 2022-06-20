@@ -15,6 +15,7 @@ public class AppsFlyerTest : MonoBehaviour
 
     public void LogEvent()
     {
+        Debug.Log("Start");
         AppsFlyer.sendEvent("Test", new Dictionary<string, string>() { { "A/b Testing", "Successful" } });
     }
 }
