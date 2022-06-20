@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507009025}
+  - component: {fileID: 507009026}
   m_Layer: 5
   m_Name: TestButtonView
   m_TagString: Untagged
@@ -159,6 +160,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &507009026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507009024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8d16c59fdadfb439977a5268d982a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testButton: {fileID: 952314406}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,19 +352,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952314407}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 952314405}
-        m_TargetAssemblyTypeName: AppsFlyerTest, Assembly-CSharp
-        m_MethodName: LogEvent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &952314407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,6 +577,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4405976200006927252, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
+      propertyPath: devKey
+      value: pxLMGBNrbExygXoVSGN5aM
+      objectReference: {fileID: 0}
     - target: {fileID: 6207133488976360133, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
