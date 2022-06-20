@@ -15,6 +15,7 @@ public class AppsFlyerTest : MonoBehaviour
 
     public void LogEvent()
     {
+        Debug.Log("Event sent");
         Debug.Log("Start");
         AppsFlyer.sendEvent("Test", GetParamsDict());
     }
